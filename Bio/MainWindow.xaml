@@ -35,35 +35,35 @@
                     <Button Content="Clear All" Margin="0,5,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="160" IsEnabled="{Binding IsWaiting}" Command="{Binding ClearCommand}"/>
                     <Button Content="Sum / 2" Margin="0,5,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="160" IsEnabled="{Binding SavedDataNotNull}" Command="{Binding MixCommand}"/>
                     <StackPanel HorizontalAlignment="Left" Height="30" Margin="3,5,0,0" VerticalAlignment="Top" Width="160" Orientation="Horizontal" IsEnabled="{Binding IsWaiting}">
-                        <RadioButton Content="" BorderBrush="Cyan" IsChecked="{Binding Path=ModeArray[0], Mode=TwoWay}">
+                        <RadioButton Content="" BorderBrush="Cyan" IsChecked="{Binding Path=ModeArray[0], Mode=TwoWay}" Width="16" Height="32">
                             <RadioButton.LayoutTransform>
                                 <TransformGroup>
                                     <ScaleTransform ScaleX="2" ScaleY="2"/>
                                 </TransformGroup>
                             </RadioButton.LayoutTransform>
                         </RadioButton>
-                        <RadioButton Content="" BorderBrush="Red" IsChecked="{Binding Path=ModeArray[1], Mode=TwoWay}">
+                        <RadioButton Content="" BorderBrush="Red" IsChecked="{Binding Path=ModeArray[1], Mode=TwoWay}" Width="16" Height="32">
                             <RadioButton.LayoutTransform>
                                 <TransformGroup>
                                     <ScaleTransform ScaleX="2" ScaleY="2"/>
                                 </TransformGroup>
                             </RadioButton.LayoutTransform>
                         </RadioButton>
-                        <RadioButton Content="" BorderBrush="Green" IsChecked="{Binding Path=ModeArray[2], Mode=TwoWay}">
+                        <RadioButton Content="" BorderBrush="Green" IsChecked="{Binding Path=ModeArray[2], Mode=TwoWay}" Width="16" Height="32">
                             <RadioButton.LayoutTransform>
                                 <TransformGroup>
                                     <ScaleTransform ScaleX="2" ScaleY="2"/>
                                 </TransformGroup>
                             </RadioButton.LayoutTransform>
                         </RadioButton>
-                        <RadioButton Content="" BorderBrush="Purple" IsChecked="{Binding Path=ModeArray[3], Mode=TwoWay}">
+                        <RadioButton Content="" BorderBrush="Purple" IsChecked="{Binding Path=ModeArray[3], Mode=TwoWay}" Width="16" Height="32">
                             <RadioButton.LayoutTransform>
                                 <TransformGroup>
                                     <ScaleTransform ScaleX="2" ScaleY="2"/>
                                 </TransformGroup>
                             </RadioButton.LayoutTransform>
                         </RadioButton>
-                        <RadioButton Content="" BorderBrush="Black" IsChecked="{Binding Path=ModeArray[4], Mode=TwoWay}" >
+                        <RadioButton Content="" BorderBrush="Black" IsChecked="{Binding Path=ModeArray[4], Mode=TwoWay}" Width="16" Height="32">
                             <RadioButton.RenderTransform>
                                 <TransformGroup>
                                     <ScaleTransform ScaleX="2" ScaleY="2"/>
