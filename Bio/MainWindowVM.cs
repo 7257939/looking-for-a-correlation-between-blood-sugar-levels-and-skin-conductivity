@@ -168,7 +168,7 @@ namespace Bio
                     SavedSource = ((LineSeries)DrawModel.Series[i]).Points;
                     foreach (DataPoint dp in SavedSource)
                     {
-                        System.IO.File.AppendAllText(SelectColor(((LineSeries)DrawModel.Series[i]).Color) +".plotdata", string.Format("{0}/{1}{2}", dp.X, dp.Y, Environment.NewLine));
+                        System.IO.File.AppendAllText(SelectColor(((LineSeries)DrawModel.Series[i]).Color) +".plotdata", string.Format("{0};{1}{2}", dp.X, dp.Y, Environment.NewLine));
                     }
                 }
             }
@@ -193,7 +193,7 @@ namespace Bio
 
                     foreach (string line in allLinesText)
                     {
-                        var dd = Array.ConvertAll(line.Split('/'), Double.Parse);
+                        var dd = Array.ConvertAll(line.Split(';'), Double.Parse);
                         collectedData.Add(new DataPoint(dd[0], dd[1]));
                     }
                     _series.Points.AddRange(collectedData);
